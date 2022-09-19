@@ -42,8 +42,8 @@ h3, a{
 .top-cloud{
     position:absolute;
     height: 4.528vh;
-    width: 7.813vw;
-    right: 20%;
+    width: max(7.813vw, 90px);
+    right: 15%;
     top: 10%;
 }
 
@@ -51,8 +51,8 @@ h3, a{
 .bottom-cloud{
     position: absolute;
     height: 4.528vh;
-    width: 7.813vw;
-    left: 20%;
+    width: max(7.813vw, 90px);
+    left: 15%;
 }
 
 .trees{
@@ -65,9 +65,9 @@ h3, a{
 
 .top-container{
     width: 100%;
-    padding-top: 200px;
+    padding-top: 20.47vh;
     padding-bottom: 0px; 
-    margin-bottom: 100px;
+    margin-bottom: 10.23vh;
     text-align: center;
 }
 
