@@ -144,12 +144,16 @@ a {
 .contact-me {
   position: relative;
   z-index: 1;
-  padding: 40px 0px;
+  padding: 40px 0px 0px;
   text-align: center;
   font-size: 0.8em;
   color: white;
 }
-
+.contact-me a,
+.contact-me h3,
+.contact-me h2 {
+  color: white;
+}
 .bottom-container {
   position: relative;
   z-index: 1;
@@ -158,6 +162,7 @@ a {
   text-align: center;
   padding: 0px 5% 5% 5%;
 }
+
 .footer-link {
   color: White;
 }
