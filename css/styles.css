@@ -13,13 +13,28 @@ hr {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 h1 {
   margin: 0px;
   font-family: "Sacramento", cursive;
-  font-size: 5.625em;
+  font-size: 2.5rem;
   color: #7fbcd2;
-  line-height: 2em;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 0px;
+  color: #7fbcd2;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 h2,
@@ -28,13 +43,6 @@ li,
 p,
 a {
   font-family: "Montserrat", sans-serif;
-}
-
-h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin: 0px;
-  color: #7fbcd2;
 }
 
 h3,
@@ -88,13 +96,16 @@ a {
   background-color: white;
   position: relative;
   z-index: 1;
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
   font-size: 1.2em;
 }
 
 .skill-row {
-  margin: 30px 15% 30px 15%;
+  margin: 30px 0;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
