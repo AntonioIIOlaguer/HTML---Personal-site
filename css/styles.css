@@ -72,7 +72,7 @@ a {
   z-index: 0;
   left: 0px;
   right: 0px;
-  height: 50vh;
+  height: 55vh;
   width: 100%;
   bottom: 0px;
 }
@@ -81,6 +81,7 @@ a {
   position: relative;
   z-index: 1;
 }
+
 .top-container {
   background-color: white;
   position: relative;
@@ -88,7 +89,7 @@ a {
   width: 100%;
   padding-top: 20.47vh;
   padding-bottom: 0px;
-  margin-bottom: 100vh;
+  margin-bottom: 70vh;
   text-align: center;
 }
 
@@ -144,15 +145,17 @@ a {
 .contact-me {
   position: relative;
   z-index: 1;
-  padding: 40px 0px 0px;
+  padding: 20px 0px;
   text-align: center;
   font-size: 0.8em;
-  color: white;
 }
-.contact-me a,
-.contact-me h3,
-.contact-me h2 {
-  color: white;
+@media (max-width: 768px) {
+  .contact-me a,
+  .contact-me h3,
+  .contact-me h2,
+  .contact-me p {
+    color: white;
+  }
 }
 .bottom-container {
   position: relative;
@@ -160,7 +163,7 @@ a {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 0px 5% 5% 5%;
+  padding: 20px 0 20px;
 }
 
 .footer-link {
