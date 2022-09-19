@@ -1,120 +1,152 @@
-body{
-    background-color: #FFFFFF;
-    margin: 0px;
-    font-family: 'Merriweather', serif;
-    font-size: max(1vw, 8px);
+body {
+  background-color: #ffffff;
+  margin: 0px;
+  font-family: "Merriweather", serif;
+  font-size: max(1vw, 16px);
 }
 
-hr{
-    border-color: gray;
-    border-style: dotted none none none;
-    width: 5%;
-    border-width: 5px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+hr {
+  border-color: gray;
+  border-style: dotted none none none;
+  width: 5%;
+  border-width: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-h1{
-    margin: 0px;
-    font-family: 'Sacramento', cursive;
-    font-size: 5.625em;
-    color: #7FBCD2;
-    line-height: 2em;
+h1 {
+  margin: 0px;
+  font-family: "Sacramento", cursive;
+  font-size: 5.625em;
+  color: #7fbcd2;
+  line-height: 2em;
 }
 
-h2, h3, li, p, a{
-    
-    font-family: 'Montserrat', sans-serif;
+h2,
+h3,
+li,
+p,
+a {
+  font-family: "Montserrat", sans-serif;
 }
 
-h2{
-    font-size: 1.5em;
-    font-weight: normal;
-    margin: 0px;
-    color: #7FBCD2;
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0px;
+  color: #7fbcd2;
 }
 
-h3, a{
-    color: #066d70;
+h3,
+a {
+  color: #066d70;
 }
 
-
-.top-cloud{
-    position:absolute;
-    height: 4.528vh;
-    width: max(7.813vw, 90px);
-    right: 15%;
-    top: 10%;
+.top-cloud {
+  position: absolute;
+  height: 4.528vh;
+  width: max(7.813vw, 90px);
+  right: 15%;
+  top: 10%;
 }
 
-    
-.bottom-cloud{
-    position: absolute;
-    height: 4.528vh;
-    width: max(7.813vw, 90px);
-    left: 15%;
+.bottom-cloud {
+  position: absolute;
+  height: 4.528vh;
+  width: max(7.813vw, 90px);
+  left: 15%;
 }
 
-.trees{
-    position:relative;
-    min-height: 50vh;
-    width: 100%;
-    margin-top: 100px;
-    bottom: 0px;
+.trees {
+  object-fit: cover;
+  object-position: top;
+  position: fixed;
+  z-index: 0;
+  left: 0px;
+  right: 0px;
+  height: 50vh;
+  width: 100%;
+  bottom: 0px;
 }
 
-.top-container{
-    width: 100%;
-    padding-top: 20.47vh;
-    padding-bottom: 0px; 
-    margin-bottom: 10.23vh;
-    text-align: center;
+.top-header {
+  position: relative;
+  z-index: 1;
+}
+.top-container {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-top: 20.47vh;
+  padding-bottom: 0px;
+  margin-bottom: 100vh;
+  text-align: center;
 }
 
-
-.middle-container{
-    text-align: center;
-    margin: 0px 5% 0px 5%;
-    padding: 0px 5% 0px 5%;
-    font-size: 1.2em;
+.middle-container {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.2em;
 }
 
-.skill-row{
+.skill-row {
+  margin: 30px 15% 30px 15%;
+}
+
+@media (min-width: 768px) {
+  .skill-row {
     display: flex;
     justify-content: center;
     text-align: justify;
-    margin: 30px 15% 30px 15%;
-    height: auto;
+  }
+  .skill-row.reverse {
+    flex-direction: row-reverse;
+  }
 }
 
-.skill-content{
-    display: relative;
+.skill-content {
+  display: relative;
 }
 
-.profile-pic{
-    border-radius: 50%;
-    height: max(15%, 120px);
-    width: max(15%, 120px);
+.profile-pic {
+  border-radius: 50%;
+  height: max(15%, 120px);
+  width: max(15%, 120px);
 }
 
-.coding-img, .mt-img, .trader-img, .rice-img{
-    height: max(25%, 120px);
-    width: max(25%, 120px);
+.coding-img,
+.mt-img,
+.trader-img,
+.rice-img {
+  height: max(25%, 120px);
+  width: max(25%, 120px);
 }
 
-.coding-img{
-    margin-right: 20px
+.coding-img {
+  margin-right: 20px;
 }
 
-.contact-me{
-    font-size: 0.8em;
+.contact-me {
+  position: relative;
+  z-index: 1;
+  padding: 40px 0px;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
 }
-.bottom-container{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 0px 5% 5% 5%;
+
+.bottom-container {
+  position: relative;
+  z-index: 1;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0px 5% 5% 5%;
 }
-.footer-link{
-    color: White;
+.footer-link {
+  color: White;
 }
